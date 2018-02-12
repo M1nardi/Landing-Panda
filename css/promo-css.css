@@ -524,7 +524,8 @@ img {
     padding-top: 80px;
     margin: 0;
     color: rgba(255, 255, 255, 0.9);
-    background: #1d1c1c url("../img/app.png") 550px 60px no-repeat;
+    background: #1d1c1c url("../img/Iphone_mockup.png") 618px 29px no-repeat;
+    background-size: contain;
 }
 
 @media only all and (min-width: 100px) and (max-width: 767px) {
@@ -535,7 +536,7 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .application {
-        background-position: 240px 60px;
+        background-position: 336px 34px;
         }}
 
 .application-box {
@@ -640,12 +641,14 @@ img {
 
 @media only all and (min-width: 100px) and (max-width: 767px) {
     .promo-video {
-        background-size: contain;
+        background-size: cover;
+        background-position: 50% 36%;
     }}
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .promo-video {
-        background-position: 50% 50%;
+        background-size: cover;
+        background-position: 50% 36%;
     }}
 
 .button-box {
@@ -722,6 +725,14 @@ img {
                 justify-content: center;
         }}
 
+@media only screen and (max-width: 506px) {
+    .slider-box {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+
 @media only all and (min-width: 100px) and (max-width: 767px) {
     .slider-box a {
         width: 150px;
@@ -730,6 +741,7 @@ img {
     }}
 
 .slider-box a {
+    flex-basis: 225px;
     margin-bottom: 15px;
 }
 
